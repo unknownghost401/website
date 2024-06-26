@@ -27,21 +27,86 @@
             font-size: 14px;
         }
         .container {
-            padding: 20px;
+            padding: 40px 20px;
         }
         .grid section {
-            padding: 20px;
+            padding: 40px 20px;
             background-color: #fff;
             border-radius: 10px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .grid section:hover {
+            transform: translateY(-10px);
         }
         .grid section h2, .grid section h3 {
             margin-top: 0;
         }
+        .grid section h2 {
+            color: #333;
+            font-size: 28px;
+        }
+        .grid section h3 {
+            color: #555;
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+        .grid section p {
+            color: #666;
+            line-height: 1.6;
+        }
+        .grid section figure {
+            margin: 20px 0;
+        }
+        .grid section figure img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .grid section figure figcaption {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .grid section figure figcaption a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .grid section figure figcaption a:hover {
+            text-decoration: underline;
+        }
         .contact-form {
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 20px;
+        }
+        .contact-form input, .contact-form textarea, .contact-form button {
+            padding: 15px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .contact-form button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            color: #888;
+            background-color: #fff;
+            border-top: 1px solid #e0e0e0;
+        }
+        footer small a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        footer small a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
